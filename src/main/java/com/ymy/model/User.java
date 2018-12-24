@@ -4,18 +4,18 @@ public class User {
     private Integer uid;
     private String uname;
     private String upass;
-    private Integer uage;
-    private String usex;
+    private Integer uflag;
+    private Integer ustate;
 
     public User() {
     }
 
-    public User(Integer uid, String uname, String upass, Integer uage, String usex) {
+    public User(Integer uid, String uname, String upass, Integer uflag, Integer ustate) {
         this.uid = uid;
         this.uname = uname;
         this.upass = upass;
-        this.uage = uage;
-        this.usex = usex;
+        this.uflag = uflag;
+        this.ustate = ustate;
     }
 
     public Integer getUid() {
@@ -42,30 +42,19 @@ public class User {
         this.upass = upass;
     }
 
-    public Integer getUage() {
-        return uage;
+    public Integer getUflag() {
+        return uflag;
     }
 
-    public void setUage(Integer uage) {
-        this.uage = uage;
+    public void setUflag(Integer uflag) {
+        this.uflag = uflag;
     }
 
-    public String getUsex() {
-        return usex;
+    public Integer getUstate() {
+        return ustate;
     }
 
-    public void setUsex(String usex) {
-        this.usex = usex;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "uid=" + uid +
-                ", uname='" + uname + '\'' +
-                ", upass='" + upass + '\'' +
-                ", uage=" + uage +
-                ", usex='" + usex + '\'' +
-                '}';
+    public void setUstate(Integer ustate) {
+        this.ustate = ustate;
     }
 }
